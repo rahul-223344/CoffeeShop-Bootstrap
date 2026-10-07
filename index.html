@@ -2,47 +2,37 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- title -->
+  <meta name="description" content="Coffee Heaven - practice project built with HTML, Bootstrap and CSS.">
   <title>Coffee Heaven</title>
 
-
   <!-- Bootstrap CSS -->
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!-- google font -->
+
+  <!-- Google Fonts (only the fonts this site uses) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Lato:wght@100;300;400;700;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merienda:wght@400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700;800;900&family=Nunito:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
-
   <!-- Font Awesome -->
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <!-- css link -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg shadow-sm sticky-top bg-white">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <figure>
-            <img src="./assets/Images/logo.png" alt="Coffee Shop" width="60">
-          </figure>
+        <a class="navbar-brand" href="#home">
+          <img src="./assets/images/logo.png" alt="Coffee Heaven logo" width="60">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,48 +40,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto gap-lg-2 text-center" id="navigation">
-            <li class="nav-item">
-              <a class="nav-link nunito fs-5 fw-normal lh-lg" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nunito fs-5 fw-normal lh-lg" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nunito fs-5 fw-normal lh-lg" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nunito fs-5 fw-normal lh-lg" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nunito fs-5 fw-normal lh-lg" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nunito fs-5 fw-normal lh-lg" href="#">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link nunito fs-5 fw-normal lh-lg" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link nunito fs-5 fw-normal lh-lg" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link nunito fs-5 fw-normal lh-lg" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link nunito fs-5 fw-normal lh-lg" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link nunito fs-5 fw-normal lh-lg" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link nunito fs-5 fw-normal lh-lg" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- ================= HERO ================= -->
 
-    <section class="min-vh-100 d-flex align-items-center" id="herosection">
+    <!-- ================= HERO ================= -->
+    <section class="min-vh-100 d-flex align-items-center" id="home">
       <div class="container">
-        <div class="row min-vh-100 align-items-center"><!-- ROW -->
-          <div class="col-12 col-sm-10 col-md-8 col-lg-7"><!-- COLUMN -->
-            <div class=" box d-flex flex-column align-items-center  gap-1"><!-- subcolumn -->
-              <h1 class="merienda display-1  lh-1 " id="heading">
-                Coffee Heaven
-              </h1>
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-7">
+            <div class="box d-flex flex-column align-items-center gap-1">
+              <h1 class="merienda display-1 lh-1" id="heading">Coffee Heaven</h1>
               <p class="nunito fs-small fw-normal lh-base">
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Adipisci ipsa
-                <br class="d-none d-md-block nunito fs-small fw-normal lh-base">
-                id vero perferendis, reiciendis dolores!
-                Lorem ipsum, dolor sit amet
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ipsa
+                <br class="d-none d-md-block">
+                id vero perferendis, reiciendis dolores! Lorem ipsum, dolor sit amet
               </p>
-              <a href="#about" class="btn   btn-primary-custom px-4 py-2 ">
-                About us
-              </a>
+              <a href="#about" class="btn btn-primary-custom px-4 py-2">About us</a>
             </div>
           </div>
         </div>
@@ -103,869 +75,348 @@
     <!-- ================= ABOUT ================= -->
     <section id="about" class="py-2">
       <div class="container">
-        <div class="row align-items-center g-4"><!-- ROW -->
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6"><!-- IMAGE COLUMN -->
-            <div class="box"><!-- SUB COLUMN -->
-              <figure class="mb-0">
-                <img src="./assets/images/about-img.jpg" alt="About Coffee Heaven" class="img-fluid w-100 rounded">
-              </figure>
-            </div>
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-6">
+            <figure class="mb-0">
+              <img src="./assets/images/about-img.jpg" alt="About Coffee Heaven" class="img-fluid w-100 rounded"
+                loading="lazy">
+            </figure>
           </div>
 
-
-          <!-- CONTENT COLUMN -->
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6"><!-- IMAGE COLUMN -->
-
-            <div class="d-flex flex-column align-items-start gap-3"><!-- SUB COLUMN -->
-
-              <h2 class="merienda display-6 lh-1" id="content">
-
-                A Cup Of Coffee Can Complete Your Day
-
-              </h2>
-
-              <p class="fs-small fw-normal lh-base" id="para">
-
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Pariatur, esse corrupti.
-                Incidunt fuga sit numquam est consequatur
-                provident ipsa quidem! Lorem ipsa
-
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column align-items-start gap-3">
+              <h2 class="merienda display-6 lh-1" id="content">A Cup Of Coffee Can Complete Your Day</h2>
+              <p class="fs-small fw-normal lh-base nunito" id="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, esse corrupti.
+                Incidunt fuga sit numquam est consequatur provident ipsa quidem! Lorem ipsa
               </p>
-
-              <a href="#menu" class=" butts btn btn-primary-custom mb-5 px-4 py-2">
-                Our Menu
-              </a>
-
+              <a href="#menu" class="btn btn-primary-custom mb-5 px-4 py-2">Our Menu</a>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
-
-
 
     <!-- ================= FACILITY ================= -->
-
-    <section class="py-2">
-
+    <section id="facility" class="py-2">
       <div class="container">
-
-
-        <!-- HEADING ROW -->
-
-        <div class="row"><!-- ROW -->
-
+        <div class="row">
           <div class="col-12">
-
-            <div class="text-center ">
-
+            <div class="text-center">
               <figure class="mb-2">
-
                 <img src="./assets/images/heading-img.jpg" alt="" class="img-fluid" width="186" height="46">
-
               </figure>
-
-              <h2 class="display-6 merienda fw-800 m-0 ">
-                Our Facility
-              </h2>
-
+              <h2 class="display-6 merienda fw-800 m-0">Our Facility</h2>
             </div>
-
           </div>
-
         </div>
-
-
-        <!-- CARDS ROW -->
 
         <div class="row g-4 text-center mb-4">
-
-
-          <!-- CARD 1 -->
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-
-            <div class="h-100 d-flex flex-column
-                   align-items-center p-4 ">
-
-              <img src="./assets/images/icon-1.png" alt="" class="img-fluid mb-3">
-
-              <h3 class="h4 nunito">
-                Varieties Of Coffee
-              </h3>
-
-              <p class="mb-0">
-
-                Lorem Ipsum Dolor,
-                Sit Amet Consectetur
-                Adipisicing Elit.
-
-              </p>
-
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="h-100 d-flex flex-column align-items-center p-4">
+              <img src="./assets/images/icon-1.png" alt="" class="img-fluid mb-3" loading="lazy">
+              <h3 class="h4 nunito">Varieties Of Coffee</h3>
+              <p class="mb-0 nunito">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
             </div>
-
           </div>
 
-
-          <!-- CARD 2 -->
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-
-            <div class="h-100 d-flex flex-column
-                   align-items-center p-4">
-
-              <img src="./assets/images/icon-2.png" alt="" class="img-fluid mb-3">
-
-              <h3 class="h4 nunito">
-                Coffee Beans
-              </h3>
-
-              <p class="mb-0">
-
-                Lorem Ipsum Dolor,
-                Sit Amet Consectetur
-                Adipisicing Elit.
-
-              </p>
-
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="h-100 d-flex flex-column align-items-center p-4">
+              <img src="./assets/images/icon-2.png" alt="" class="img-fluid mb-3" loading="lazy">
+              <h3 class="h4 nunito">Coffee Beans</h3>
+              <p class="mb-0 nunito">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
             </div>
-
           </div>
 
-
-          <!-- CARD 3 -->
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
-
-            <div class="h-100 d-flex flex-column
-                   align-items-center p-4">
-
-              <img src="./assets/images/icon-3.png" alt="" class="img-fluid mb-3">
-
-              <h3 class="h4 nunito">
-                Breakfast And Sweets
-              </h3>
-
-              <p class="mb-0">
-
-                Lorem Ipsum Dolor,
-                Sit Amet Consectetur
-                Adipisicing Elit.
-
-              </p>
-
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="h-100 d-flex flex-column align-items-center p-4">
+              <img src="./assets/images/icon-3.png" alt="" class="img-fluid mb-3" loading="lazy">
+              <h3 class="h4 nunito">Breakfast And Sweets</h3>
+              <p class="mb-0 nunito">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
             </div>
-
           </div>
 
-
-          <!-- CARD 4 -->
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-
-            <div class="h-100 d-flex flex-column
-                   align-items-center p-4">
-
-              <img src="./assets/images/icon-4.png" alt="" class="img-fluid mb-3">
-
-              <h3 class="h4 nunito">
-                Ready To Go Coffee
-              </h3>
-
-              <p class="mb-0">
-
-                Lorem Ipsum Dolor,
-                Sit Amet Consectetur
-                Adipisicing Elit.
-
-              </p>
-
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="h-100 d-flex flex-column align-items-center p-4">
+              <img src="./assets/images/icon-4.png" alt="" class="img-fluid mb-3" loading="lazy">
+              <h3 class="h4 nunito">Ready To Go Coffee</h3>
+              <p class="mb-0 nunito">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
             </div>
-
           </div>
-
-
         </div>
-
       </div>
-
     </section>
-
-
 
     <!-- ================= POPULAR MENU ================= -->
-
     <section id="menu" class="py-2">
-
       <div class="container">
-
-
-        <!-- HEADING -->
-
         <div class="row">
-
           <div class="col-12">
-
             <div class="text-center mb-5">
-
               <figure class="mb-2">
-
                 <img src="./assets/images/heading-img.jpg" alt="" class="img-fluid" width="186" height="46">
-
               </figure>
-
-              <h2 class="display-6 merienda fw-800">
-                Popular Menu
-              </h2>
-
+              <h2 class="display-6 merienda fw-800">Popular Menu</h2>
             </div>
-
           </div>
-
         </div>
-
-
-        <!-- MENU ROW -->
 
         <div class="row g-0 text-center">
-
-
-          <!-- MENU 1 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
-            <div class="p-0">
-
-              <img src="./assets/images/menu-1.png" alt="" class="img-fluid mb-3" width="300" height="300">
-
-              <p class=" fs-5 fw-normal nunito">
-                Love You Coffee
-              </p>
-
-            </div>
-
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="./assets/images/menu-1.png" alt="Love You Coffee" class="img-fluid mb-3" width="300"
+              height="300" loading="lazy">
+            <p class="fs-5 fw-normal nunito">Love You Coffee</p>
           </div>
 
-
-          <!-- MENU 2 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
-            <div class="p-0">
-
-              <img src="./assets/images/menu-2.png" alt="" class="img-fluid mb-3" width="300" height="300">
-
-              <p class="fs-5 fw-normal nunito">
-                Cappuccino
-              </p>
-
-            </div>
-
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="./assets/images/menu-2.png" alt="Cappuccino" class="img-fluid mb-3" width="300" height="300"
+              loading="lazy">
+            <p class="fs-5 fw-normal nunito">Cappuccino</p>
           </div>
 
-
-          <!-- MENU 3 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
-            <div class="p-0">
-
-              <img src="./assets/images/menu-3.png" alt="" class="img-fluid mb-3 " width="300" height="300">
-
-              <p class="fs-5 fw-normal nunito">
-                Mocha Coffee
-              </p>
-
-            </div>
-
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="./assets/images/menu-3.png" alt="Mocha Coffee" class="img-fluid mb-3" width="300" height="300"
+              loading="lazy">
+            <p class="fs-5 fw-normal nunito">Mocha Coffee</p>
           </div>
 
-
-          <!-- MENU 4 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
-            <div class="p-0">
-
-              <img src="./assets/images/menu-4.png" alt="" class="img-fluid mb-3" width="300" height="300">
-
-              <p class="fs-5 fw-normal nunito">
-                Frappuccino
-              </p>
-
-            </div>
-
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="./assets/images/menu-4.png" alt="Frappuccino" class="img-fluid mb-3" width="300" height="300"
+              loading="lazy">
+            <p class="fs-5 fw-normal nunito">Frappuccino</p>
           </div>
 
-
-          <!-- MENU 5 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
-            <div class="p-0">
-
-              <img src="./assets/images/menu-5.png" alt="" class="img-fluid mb-3" width="300" height="300">
-
-              <p class="fs-5 fw-normal nunito">
-                Black Coffee
-              </p>
-
-            </div>
-
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="./assets/images/menu-5.png" alt="Black Coffee" class="img-fluid mb-3" width="300" height="300"
+              loading="lazy">
+            <p class="fs-5 fw-normal nunito">Black Coffee</p>
           </div>
 
-
-          <!-- MENU 6 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
-            <div class="p-0">
-
-              <img src="./assets/images/menu-6.png" alt="" class="img-fluid mb-3" width="300" height="300">
-
-              <p class="fs-5 fw-normal nunito">
-                Love Heart Coffee
-              </p>
-
-            </div>
-
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="./assets/images/menu-6.png" alt="Love Heart Coffee" class="img-fluid mb-3" width="300"
+              height="300" loading="lazy">
+            <p class="fs-5 fw-normal nunito">Love Heart Coffee</p>
           </div>
-
-
         </div>
-
       </div>
-
     </section>
-
-
 
     <!-- ================= GALLERY ================= -->
-
     <section id="gallery" class="py-5">
-
       <div class="container">
-
-
-        <!-- HEADING -->
-
         <div class="row">
-
           <div class="col-12">
-
             <div class="text-center mb-5">
-
               <figure class="mb-2">
-
                 <img src="./assets/images/heading-img.jpg" alt="" class="img-fluid" width="186" height="46">
-
               </figure>
-
-              <h2 class="display-6 merienda fw-800">
-                Our Gallery
-              </h2>
-
+              <h2 class="display-6 merienda fw-800">Our Gallery</h2>
             </div>
-
           </div>
-
         </div>
-
-
-        <!-- GALLERY ROW -->
 
         <div class="row g-4">
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <img src="./assets/images/gallery-1.jpg" alt="Coffee Heaven gallery photo 1"
-              class="img-fluid w-100 rounded">
-
+              class="img-fluid w-100 rounded" loading="lazy">
           </div>
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <img src="./assets/images/gallery-2.jpg" alt="Coffee Heaven gallery photo 2"
-              class="img-fluid w-100 rounded">
-
+              class="img-fluid w-100 rounded" loading="lazy">
           </div>
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <img src="./assets/images/gallery-3.jpg" alt="Coffee Heaven gallery photo 3"
-              class="img-fluid w-100 rounded">
-
+              class="img-fluid w-100 rounded" loading="lazy">
           </div>
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <img src="./assets/images/gallery-4.jpg" alt="Coffee Heaven gallery photo 4"
-              class="img-fluid w-100 rounded">
-
+              class="img-fluid w-100 rounded" loading="lazy">
           </div>
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <img src="./assets/images/gallery-5.jpg" alt="Coffee Heaven gallery photo 5"
-              class="img-fluid w-100 rounded">
-
+              class="img-fluid w-100 rounded" loading="lazy">
           </div>
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <img src="./assets/images/gallery-6.jpg" alt="Coffee Heaven gallery photo 6"
-              class="img-fluid w-100 rounded">
-
+              class="img-fluid w-100 rounded" loading="lazy">
           </div>
-
-
         </div>
-
       </div>
-
     </section>
-
-
 
     <!-- ================= TEAM ================= -->
-
     <section id="team" class="py-5">
-
       <div class="container">
-
-
-        <!-- HEADING -->
-
         <div class="row">
-
           <div class="col-12">
-
             <div class="text-center mb-5">
-
               <figure class="mb-2">
-
                 <img src="./assets/images/heading-img.jpg" alt="" class="img-fluid" width="186" height="46">
-
               </figure>
-
-              <h2 class="display-6 merienda fw-800">
-                Our Team
-              </h2>
-
+              <h2 class="display-6 merienda fw-800">Our Team</h2>
             </div>
-
           </div>
-
         </div>
-
-
-        <!-- TEAM ROW -->
 
         <div class="row g-4 text-center">
-
-
-          <!-- MEMBER 1 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <div class="p-3">
-
-              <img src="./assets/images/our-team-1.jpg" alt="Toby" class="img-fluid rounded mb-3">
-
-              <p class="fs-5 fw-normal nunito">
-                Toby
-              </p>
-
+              <img src="./assets/images/our-team-1.jpg" alt="Toby" class="img-fluid rounded mb-3" loading="lazy">
+              <p class="fs-5 fw-normal nunito">Toby</p>
             </div>
-
           </div>
-
-
-          <!-- MEMBER 2 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <div class="p-3">
-
-              <img src="./assets/images/our-team-2.jpg" alt="Naren" class="img-fluid rounded mb-3">
-
-              <p class="fs-5 fw-normal nunito">
-                Naren
-              </p>
-
+              <img src="./assets/images/our-team-2.jpg" alt="Naren" class="img-fluid rounded mb-3" loading="lazy">
+              <p class="fs-5 fw-normal nunito">Naren</p>
             </div>
-
           </div>
-
-
-          <!-- MEMBER 3 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <div class="p-3">
-
-              <img src="./assets/images/our-team-3.jpg" alt="Sanjay" class="img-fluid rounded mb-3">
-
-              <p class="fs-5 fw-normal nunito">
-                Sanjay
-              </p>
-
+              <img src="./assets/images/our-team-3.jpg" alt="Sanjay" class="img-fluid rounded mb-3" loading="lazy">
+              <p class="fs-5 fw-normal nunito">Sanjay</p>
             </div>
-
           </div>
-
-
-          <!-- MEMBER 4 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <div class="p-3">
-
-              <img src="./assets/images/our-team-4.jpg" alt="Rahul" class="img-fluid rounded mb-3">
-
-              <p class="fs-5 fw-normal nunito">
-                Rahul
-              </p>
-
+              <img src="./assets/images/our-team-4.jpg" alt="Rahul" class="img-fluid rounded mb-3" loading="lazy">
+              <p class="fs-5 fw-normal nunito">Rahul</p>
             </div>
-
           </div>
-
-
-          <!-- MEMBER 5 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <div class="p-3">
-
-              <img src="./assets/images/our-team-5.jpg" alt="Surya" class="img-fluid rounded mb-3">
-
-              <p class="fs-5 fw-normal nunito">
-                Surya
-              </p>
-
+              <img src="./assets/images/our-team-5.jpg" alt="Surya" class="img-fluid rounded mb-3" loading="lazy">
+              <p class="fs-5 fw-normal nunito">Surya</p>
             </div>
-
           </div>
-
-
-          <!-- MEMBER 6 -->
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-
+          <div class="col-12 col-sm-6 col-md-4">
             <div class="p-3">
-
-              <img src="./assets/images/our-team-6.jpg" alt="Jiya" class="img-fluid rounded mb-3">
-
-              <p class="fs-5 fw-normal nunito">
-                Jiya
-              </p>
-
+              <img src="./assets/images/our-team-6.jpg" alt="Jiya" class="img-fluid rounded mb-3" loading="lazy">
+              <p class="fs-5 fw-normal nunito">Jiya</p>
             </div>
-
           </div>
-
-
         </div>
-
       </div>
-
     </section>
-
-
   </main>
 
-
-
-  <!-- =====================================================
-     FOOTER
-===================================================== -->
-
+  <!-- ================= FOOTER ================= -->
   <footer>
-
-
-    <!-- ================= CONTACT ================= -->
-
+    <!-- CONTACT -->
     <section id="contact" class="py-5">
-
       <div class="container">
-
-
-        <!-- HEADING -->
-
         <div class="row">
-
           <div class="col-12">
-
             <div class="text-center mb-5">
-
               <figure class="mb-2">
-
                 <img src="./assets/images/heading-img.jpg" alt="" class="img-fluid" width="186" height="46">
-
               </figure>
-
-              <h2 class="display-6 merienda fw-800 fs-40 ">
-                Contact Us
-              </h2>
-
+              <h2 class="display-6 merienda fw-800 fs-40">Contact Us</h2>
             </div>
-
           </div>
-
         </div>
-
-
-        <!-- CONTACT ROW -->
 
         <div class="row align-items-center g-4">
-
-
-          <!-- IMAGE -->
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-
-            <img src="./assets/images/contact-img (1).jpg" alt="Contact us" class="img-fluid w-100 rounded">
-
+          <div class="col-12 col-md-6">
+            <img src="./assets/images/contact-img.jpg" alt="Contact us" class="img-fluid w-100 rounded"
+              loading="lazy">
           </div>
 
-
-          <!-- FORM -->
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-
-            <form class="d-flex flex-column gap-3">
-
-
-              <!-- NAME -->
-
+          <div class="col-12 col-md-6">
+            <!-- Demo form: nothing is sent or stored -->
+            <form class="d-flex flex-column gap-3" id="demoForm" novalidate>
               <div>
-
-                <label for="name" class="form-label">
-                  Name
-                </label>
-
-                <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name" required>
-
+                <label for="name" class="form-label nunito">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name"
+                  required>
               </div>
 
-
-              <!-- CONTACT -->
-
               <div>
-
-                <label for="contactNumber" class="form-label">
-                  Contact Number
-                </label>
-
-                <input type="tel" id="contactNumber" name="contact" class="form-control"
-                  placeholder="Enter Your Contact Number" pattern="[0-9]{10}" required>
-
-              </div>
-
-
-              <!-- SEAT NUMBER -->
-
-              <div>
-
-                <label for="seatNumber" class="form-label">
-                  Seat Number
-                </label>
-
+                <label for="seatNumber" class="form-label nunito">Seat Number</label>
                 <input type="number" id="seatNumber" name="seat-number" class="form-control"
-                  placeholder="Enter Your Seat Number" required>
-
+                  placeholder="Enter Your Seat Number" min="1" required>
               </div>
 
-
-              <!-- SUBMIT -->
-
-              <button type="submit" class="btn btn-dark align-self-start px-4">
-                Submit
-              </button>
-
-
+              <button type="submit" class="btn btn-dark align-self-start px-4">Submit</button>
+              <small class="text-muted nunito">Demo form for a practice project. No data is collected or sent.</small>
             </form>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- ================= CONTACT DETAILS ================= -->
-
+    <!-- CONTACT DETAILS -->
     <section class="py-5 bg-light">
-
       <div class="container">
-
-        <!-- ROW -->
-
         <div class="row g-4 text-center">
-
-
-          <!-- EMAIL -->
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="h-100 p-4">
-
-              <i class="fa-solid fa-envelope fs-2 mb-3  " id="icon"></i>
-
-              <h3 class="h5 fs-5 nunito fw-medium lh-lg">
-                Our Email
-              </h3>
-
-              <p class="mb-0 fs-5 nunito fw-normal lh-md">
-
-                Shaakshi@gmail.com
+              <i class="fa-solid fa-envelope fs-2 mb-3" id="icon"></i>
+              <h3 class="h5 fs-5 nunito fw-medium lh-lg">Our Email</h3>
+              <p class="mb-0 fs-5 nunito fw-normal">
+                hello@example.com
                 <br>
-                Hyhy@gmail.com
-
+                support@example.com
               </p>
-
             </div>
-
           </div>
 
-
-          <!-- HOURS -->
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="h-100 p-4">
-
               <i class="fa-regular fa-clock fs-2 mb-3"></i>
-
-              <h3 class="h5 nunito fs-5 fw-medium lh-md">
-                Opening Hours
-              </h3>
-
-              <p class="mb-0 fs-5 nunito fw-normal lh-lg">
-                07:00am to 09:00pm
-              </p>
-
+              <h3 class="h5 nunito fs-5 fw-medium lh-lg">Opening Hours</h3>
+              <p class="mb-0 fs-5 nunito fw-normal">07:00am to 09:00pm</p>
             </div>
-
           </div>
 
-
-          <!-- LOCATION -->
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="h-100 p-4">
-
               <i class="fa-solid fa-location-crosshairs fs-2 mb-3"></i>
-
-              <h3 class="h5 nunito fs-5 fw-medium lh-lg">
-                Shop Location
-              </h3>
-
-              <p class="mb-0 fs-5 nunito fw-normal lh-md">
-                Mumbai, India- 400101
-              </p>
-
+              <h3 class="h5 nunito fs-5 fw-medium lh-lg">Shop Location</h3>
+              <p class="mb-0 fs-5 nunito fw-normal">Mumbai, India - 400101</p>
             </div>
-
           </div>
 
-
-          <!-- PHONE -->
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="h-100 p-4">
-
               <i class="fa-solid fa-phone fs-2 mb-3"></i>
-
-              <h3 class="h5 nunito fs-5 fw-medium lh-lg">
-                Our Number
-              </h3>
-
-              <p class="mb-0 fs-5 nunito fw-normal lh-md">
-
-                +91-123-456-7890
+              <h3 class="h5 nunito fs-5 fw-medium lh-lg">Our Number</h3>
+              <p class="mb-0 fs-5 nunito fw-normal">
+                +91 00000 00000
                 <br>
-                +91-111-222-3333
-
+                +91 00000 11111
               </p>
-
             </div>
-
           </div>
-
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- ================= COPYRIGHT ================= -->
-
+    <!-- COPYRIGHT -->
     <section class="py-3 text-center border-top">
-
       <div class="container">
-
-        <!-- ROW -->
-
-        <div class="row">
-
-          <!-- COLUMN -->
-
-          <div class="col-12">
-
-            <p class="mb-0 fs-5 fw-normal line-height-30 nunito ">
-
-              © Copyright @ 2022 By
-
-              <span class="fw-normal fs-5 line-height-30 nunito primary-color">
-                Mr. Web Designer
-              </span>
-
-              | All Rights Reserved
-
-            </p>
-
-          </div>
-
-        </div>
-
+        <p class="mb-0 fs-5 fw-normal line-height-30 nunito">
+          &copy; 2022 By <span class="primary-color">Mr. Web Designer</span> | All Rights Reserved
+          <br>
+          <small class="text-muted">Practice project. Not a real business.</small>
+        </p>
       </div>
-
     </section>
-
-
   </footer>
 
-
-
-  <!-- BOOTSTRAP JS -->
-
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-
+  <!-- Demo form handler -->
+  <script>
+    document.getElementById("demoForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Demo form only. Nothing was sent.");
+      this.reset();
+    });
+  </script>
 </body>
 
 </html>
