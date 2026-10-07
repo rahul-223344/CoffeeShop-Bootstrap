@@ -1,0 +1,81 @@
+:root {
+  --primaryColor: #be9c79;
+  --secondaryColor: #666666;
+  --darkColor: #333333;
+  --lightColor: #ffffff;
+  --regularFont: 1.6rem;
+  --headingFont: 2.5rem;
+  --ffPrimary: "Nunito Sans", sans-serif;
+  --ffSecondary: "Merienda", cursive;
+}
+
+/* FIX 1: lowercase path to match assets/images/ used everywhere else
+   (case-sensitive servers will 404 on "Images") */
+#herosection {
+  background: linear-gradient(90deg, white, transparent 70%), url(./assets/images/Background_img.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.primary-color {
+  color: var(--primaryColor);
+}
+
+.nav-link {
+  color: rgb(52, 58, 64)
+}
+
+/* FIX 4: fluid font-size instead of a fixed 65px that overrides
+   Bootstrap's .display-1 responsive scaling */
+#heading {
+  color: rgb(33, 37, 41);
+  font-size: clamp(2.5rem, 8vw, 65px);
+  font-weight: 900;
+}
+
+.btn-primary-custom {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  color: #fff;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--darkColor);
+  color: var(--lightColor);
+}
+
+/* FIX 5: 6rem margin was flat across all breakpoints, pushing
+   navbar/hero/about content off-screen on mobile & tablet.
+   Now it only applies at desktop widths and scales down below that. */
+.box {
+  margin-right: 0;
+}
+
+
+.merienda {
+  font-family: "Merienda", serif;
+}
+#content{
+  color: rgb(33, 37, 41);
+  font-weight: 800;
+}
+
+/* FIX 3: fixed 565px width caused horizontal overflow on mobile/tablet;
+   fixed 45px height clipped wrapped text. Now fluid + auto height. */
+#para{
+  width: 100%;
+  max-width: 565px;
+  height: auto;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+.headin{
+  width: 235px;
+  height: 40px;
+}
+.fs-40 {
+  font-size: 40px;
+}
