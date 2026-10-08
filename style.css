@@ -1,22 +1,33 @@
+/* ===== Bootstrap theme overrides (brand colour) ===== */
 :root {
-  --primaryColor: #be9c79;
-  --secondaryColor: #666666;
-  --darkColor: #333333;
-  --lightColor: #ffffff;
+  --bs-primary: #be9c79;
+  --bs-primary-rgb: 190, 156, 121;
   --ffPrimary: "Nunito", sans-serif;
   --ffSecondary: "Merienda", cursive;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Brand button: .btn-primary -> tan, hover -> dark */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #be9c79;
+  --bs-btn-border-color: #be9c79;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #333333;
+  --bs-btn-hover-border-color: #333333;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #333333;
+  --bs-btn-active-border-color: #333333;
 }
 
-/* keep section titles visible below the sticky navbar */
-section[id] {
-  scroll-margin-top: 90px;
+/* Navbar link colours via Bootstrap navbar variables */
+.navbar {
+  --bs-navbar-color: rgb(52, 58, 64);
+  --bs-navbar-hover-color: #be9c79;
+  --bs-navbar-active-color: #be9c79;
 }
 
-/* ===== Fonts ===== */
+/* ===== Things Bootstrap has no utility for ===== */
+/* Fonts */
 .nunito {
   font-family: var(--ffPrimary);
 }
@@ -25,73 +36,24 @@ section[id] {
   font-family: var(--ffSecondary);
 }
 
-/* ===== Hero (folder name must be lowercase: assets/images) ===== */
-#home {
-  background:
-    linear-gradient(90deg, white, transparent 70%),
-    url("./assets/images/Background_img.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#heading {
-  color: rgb(33, 37, 41);
-  font-size: clamp(2.5rem, 8vw, 65px);
-  font-weight: 900;
-}
-
-/* ===== Navbar ===== */
-.nav-link {
-  color: rgb(52, 58, 64);
-}
-
-.nav-link:hover {
-  color: var(--primaryColor);
-}
-
-/* ===== Buttons ===== */
-.btn-primary-custom {
-  background-color: var(--primaryColor);
-  border-color: var(--primaryColor);
-  color: #fff;
-}
-
-.btn-primary-custom:hover {
-  background-color: var(--darkColor);
-  border-color: var(--darkColor);
-  color: var(--lightColor);
-}
-
-/* ===== About ===== */
-#content {
-  color: rgb(33, 37, 41);
-  font-weight: 800;
-}
-
-#para {
-  width: 100%;
-  max-width: 565px;
-  height: auto;
-}
-
-/* ===== Helpers ===== */
-.primary-color {
-  color: var(--primaryColor);
-}
-
 .fw-800 {
   font-weight: 800;
 }
 
-.fs-40 {
-  font-size: 40px;
+/* keep section titles visible below the sticky navbar */
+section[id] {
+  scroll-margin-top: 90px;
 }
 
-.fs-small {
-  font-size: 1rem;
+/* Hero background (gradient + image) */
+#home {
+  background:
+    linear-gradient(90deg, white, transparent 70%),
+    url("./assets/images/Background_img.jpeg") center / cover no-repeat;
 }
 
-.line-height-30 {
-  line-height: 30px;
+/* Hero heading: fluid size + extra-bold */
+#heading {
+  font-size: clamp(2.5rem, 8vw, 65px);
+  font-weight: 900;
 }
