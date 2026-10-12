@@ -316,7 +316,7 @@
           </div>
         </div>
 
-        <div class="row align-items-center g-4">
+        <div class="row align-items-start g-4">
           <div class="col-12 col-md-6">
             <img src="./assets/images/contact-img (1).jpg" alt="Contact us" class="img-fluid w-100 rounded"
               loading="lazy">
@@ -324,20 +324,138 @@
 
           <div class="col-12 col-md-6">
             <!-- Demo form: nothing is sent or stored -->
-            <form class="d-flex flex-column gap-3" id="demoForm" novalidate>
-              <div>
-                <label for="name" class="form-label nunito">Name</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name" required>
+            <form class="row g-3" id="demoForm" novalidate>
+
+              <!-- Name -->
+              <div class="col-12 col-sm-6">
+                <label for="name" class="form-label nunito">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                  minlength="2" autocomplete="name" required>
+                <div class="invalid-feedback">Please enter your name (min 2 characters).</div>
               </div>
 
-              <div>
+              <!-- Email -->
+              <div class="col-12 col-sm-6">
+                <label for="email" class="form-label nunito">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com"
+                  autocomplete="email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+
+              <!-- Phone -->
+              <div class="col-12 col-sm-6">
+                <label for="phone" class="form-label nunito">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="10-digit mobile number"
+                  pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel" required>
+                <div class="invalid-feedback">Enter a valid 10-digit Indian mobile number.</div>
+              </div>
+
+              <!-- Seat number -->
+              <div class="col-12 col-sm-6">
                 <label for="seatNumber" class="form-label nunito">Seat Number</label>
-                <input type="number" id="seatNumber" name="seat-number" class="form-control"
-                  placeholder="Enter Your Seat Number" min="1" required>
+                <input type="number" id="seatNumber" name="seat-number" class="form-control" placeholder="1 - 50"
+                  min="1" max="50" required>
+                <div class="invalid-feedback">Seat number must be between 1 and 50.</div>
               </div>
 
-              <button type="submit" class="btn btn-dark align-self-start px-4">Submit</button>
-              <small class="text-muted nunito">Demo form for a practice project. No data is collected or sent.</small>
+              <!-- Date -->
+              <div class="col-12 col-sm-6">
+                <label for="visitDate" class="form-label nunito">Visit Date</label>
+                <input type="date" id="visitDate" name="visit-date" class="form-control" required>
+                <div class="invalid-feedback">Please choose a date.</div>
+              </div>
+
+              <!-- Time (matches opening hours 7am - 9pm) -->
+              <div class="col-12 col-sm-6">
+                <label for="visitTime" class="form-label nunito">Visit Time</label>
+                <input type="time" id="visitTime" name="visit-time" class="form-control" min="07:00" max="21:00"
+                  required>
+                <div class="invalid-feedback">Choose a time between 7:00 AM and 9:00 PM.</div>
+              </div>
+
+              <!-- Guests -->
+              <div class="col-12 col-sm-6">
+                <label for="guests" class="form-label nunito">Number of Guests</label>
+                <select id="guests" name="guests" class="form-select" required>
+                  <option value="" selected disabled>Select guests</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5+">5 or more</option>
+                </select>
+                <div class="invalid-feedback">Please select the number of guests.</div>
+              </div>
+
+              <!-- Favourite coffee (from your menu) -->
+              <div class="col-12 col-sm-6">
+                <label for="coffeeType" class="form-label nunito">Favourite Coffee</label>
+                <select id="coffeeType" name="coffee-type" class="form-select">
+                  <option value="" selected>No preference</option>
+                  <option>Love You Coffee</option>
+                  <option>Cappuccino</option>
+                  <option>Mocha Coffee</option>
+                  <option>Frappuccino</option>
+                  <option>Black Coffee</option>
+                  <option>Love Heart Coffee</option>
+                </select>
+              </div>
+
+              <!-- Seating preference (radio group) -->
+              <fieldset class="col-12">
+                <legend class="form-label nunito fs-6">Seating Preference</legend>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="seating" id="seatIndoor" value="indoor" required>
+                  <label class="form-check-label nunito" for="seatIndoor">Indoor</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="seating" id="seatOutdoor" value="outdoor">
+                  <label class="form-check-label nunito" for="seatOutdoor">Outdoor</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="seating" id="seatWindow" value="window">
+                  <label class="form-check-label nunito" for="seatWindow">Window</label>
+                </div>
+              </fieldset>
+
+              <!-- Message -->
+              <div class="col-12">
+                <label for="message" class="form-label nunito">Special Requests</label>
+                <textarea id="message" name="message" class="form-control" rows="3" maxlength="300"
+                  placeholder="Birthday, allergies, extra chairs..."></textarea>
+                <div class="form-text">Max 300 characters.</div>
+              </div>
+
+              <!-- Newsletter -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                  <label class="form-check-label nunito" for="newsletter">
+                    Send me offers and new menu updates
+                  </label>
+                </div>
+              </div>
+
+              <!-- Terms (required) -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                  <label class="form-check-label nunito" for="terms">
+                    I agree to the booking terms
+                  </label>
+                  <div class="invalid-feedback">You must agree before submitting.</div>
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <div class="col-12 d-flex gap-2">
+                <button type="submit" class="btn btn-dark px-4">Submit</button>
+                <button type="reset" class="btn btn-outline-secondary px-4">Reset</button>
+              </div>
+
+              <div class="col-12">
+                <small class="text-muted nunito">Demo form for a practice project. No data is collected or sent.</small>
+              </div>
             </form>
           </div>
         </div>
@@ -410,11 +528,26 @@
 
   <!-- Demo form handler -->
   <script>
-    document.getElementById("demoForm").addEventListener("submit", function (e) {
+    const form = document.getElementById("demoForm");
+
+    // Block past dates
+    document.getElementById("visitDate").min = new Date().toISOString().split("T")[0];
+
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
+      e.stopPropagation();
+
+      if (!form.checkValidity()) {
+        form.classList.add("was-validated");
+        return;
+      }
+
       alert("Demo form only. Nothing was sent.");
-      this.reset();
+      form.reset();
+      form.classList.remove("was-validated");
     });
+
+    form.addEventListener("reset", () => form.classList.remove("was-validated"));
   </script>
 </body>
 
